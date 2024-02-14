@@ -2,7 +2,7 @@ import React from 'react'
 import { Link} from 'react-router-dom'
 import {NAV_LINKS} from '../../constants/index'
 import Logo  from '../assets/odessy-2.svg'
-import Button from './button'
+import Button from '../components/Button'
 import Icon from '../assets/user.svg'
 import Menu from '../assets/menu.svg'
 
