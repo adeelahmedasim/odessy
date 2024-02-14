@@ -4,7 +4,7 @@ import Star from '../assets/star.svg'
 import Play from '../assets/play.svg'
 import Close from '../assets/close.svg'
 import Download from '../assets/download.svg'
-import Button from './button'
+import Button from '../components/Button'
 
 export default function Hero() {
   return (

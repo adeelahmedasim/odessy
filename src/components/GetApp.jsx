@@ -1,7 +1,7 @@
 import React from 'react'
 import Apple from '../assets/apple.svg'
 import Android from '../assets/android.svg'
-import Button from './button'
+import Button from '../components/Button'
 import Phone from '../assets/phones.png'
 
 export default function GetApp() {
