@@ -1,3 +1,12 @@
+import Facebook from  '/src/assets/facebook.svg'
+import Insta from '/src/assets/instagram.svg'
+import Twitter from '/src/assets/twitter.svg'
+import Youtube from'/src/assets/youtube.svg'
+import Wordpress from '/src/assets/wordpress.svg'
+
+
+
+
 export const NAV_LINKS = [
     { href: '/', key: 'home', label: 'Home' },
     { href: '/', key: 'how_hilink_work', label: 'How Hilink Work?' },
@@ -68,11 +77,6 @@ export const NAV_LINKS = [
   
   export const SOCIALS = {
     title: 'Social',
-    links: [
-      '/src/assets/facebook.svg',
-      '/src/assets/instagram.svg',
-      '/src/assets/twitter.svg',
-      '/src/assets/youtube.svg',
-      '/src/assets/wordpress.svg',
-    ],
+    links: [Facebook, Insta, Twitter, Wordpress]
+    
   };

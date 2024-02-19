@@ -3,14 +3,14 @@ import Map from '../assets/folded-map.svg'
 import Quote from "../assets/quote.svg"
 import  Camp1 from '../assets/img-1.png'
 import  Camp2 from '../assets/img-2.png'
+import Person1 from '../assets/person-1.png';
+import Person2 from '../assets/person-2.png';
+import Person3 from '../assets/person-3.png';
+import Person4 from '../assets/person-4.png';
 
 const CampSite = ({backgroundImage, title, subtitle, peopleJoined}) => {
-  const PEOPLE_URL = [
-    '../assets/person-1.png',
-    '../assets/person-2.png',
-    '../assets/person-3.png',
-    '../assets/person-4.png',
-  ];
+  const PEOPLE_URL = [Person1, Person2, Person3, Person4];
+  
   return (
     <div className={`h-full w-full min-w-[1100px] bg-cover bg-no-repeat rounded-5xl lg:rounded-r-5xl 2xl:rounded-5xl`} style={{ backgroundImage: `url(${backgroundImage})` }}>
     <div className='flex h-full flex-col items-start justify-between p-8 lg-px-20 lg:py-10'>
