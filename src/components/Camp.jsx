@@ -6,10 +6,10 @@ import  Camp2 from '../assets/img-2.png'
 
 const CampSite = ({backgroundImage, title, subtitle, peopleJoined}) => {
   const PEOPLE_URL = [
-    'src/assets/person-1.png',
-    '/src/assets/person-2.png',
-    '/src/assets/person-3.png',
-    '/src/assets/person-4.png',
+    '../assets/person-1.png',
+    '../assets/person-2.png',
+    '../assets/person-3.png',
+    '../assets/person-4.png',
   ];
   return (
     <div className={`h-full w-full min-w-[1100px] bg-cover bg-no-repeat rounded-5xl lg:rounded-r-5xl 2xl:rounded-5xl`} style={{ backgroundImage: `url(${backgroundImage})` }}>
