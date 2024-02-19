@@ -5,14 +5,7 @@ export const NAV_LINKS = [
     { href: '/', key: 'pricing ', label: 'Pricing ' },
     { href: '/', key: 'contact_us', label: 'Contact Us' },
   ];
-  
-  // CAMP SECTION
-  export const PEOPLE_URL = [
-    '/src/assets/person-1.png',
-    '/src/assets/person-2.png',
-    '/src/assets/person-3.png',
-    '/src/assets/person-4.png',
-  ];
+
   
   // FEATURES SECTION
   export const FEATURES = [

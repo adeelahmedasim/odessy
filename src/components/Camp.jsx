@@ -1,11 +1,16 @@
 import React from 'react'
 import Map from '../assets/folded-map.svg'
 import Quote from "../assets/quote.svg"
-import { PEOPLE_URL } from '../../constants'
 import  Camp1 from '../assets/img-1.png'
 import  Camp2 from '../assets/img-2.png'
 
 const CampSite = ({backgroundImage, title, subtitle, peopleJoined}) => {
+  const PEOPLE_URL = [
+    'src/assets/person-1.png',
+    '/src/assets/person-2.png',
+    '/src/assets/person-3.png',
+    '/src/assets/person-4.png',
+  ];
   return (
     <div className={`h-full w-full min-w-[1100px] bg-cover bg-no-repeat rounded-5xl lg:rounded-r-5xl 2xl:rounded-5xl`} style={{ backgroundImage: `url(${backgroundImage})` }}>
     <div className='flex h-full flex-col items-start justify-between p-8 lg-px-20 lg:py-10'>
@@ -20,9 +25,9 @@ const CampSite = ({backgroundImage, title, subtitle, peopleJoined}) => {
         </div>
         <div className='flexCenter gap-6'>
             <span className='flex -space-x-4 overflow-hidden'>
-                {PEOPLE_URL.map((url)=>(
+                {PEOPLE_URL.map((url, index)=>(
                   <img  className='inline-block h-10 w-10 rounded-full'
-                  src={url}  key={url} alt="person" width={52} height={52}/>
+                  src={url}  key={index} alt="person" width={52} height={52}/>
                 ))}
             </span>
                <p className='bold-16 md:bold-20 text-white'>{peopleJoined}</p>     
