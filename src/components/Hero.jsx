@@ -5,11 +5,15 @@ import Play from '../assets/play.svg'
 import Close from '../assets/close.svg'
 import Download from '../assets/download.svg'
 import Button from '../components/Button'
+import Background from '../assets/pattern-bg.png'
 
 export default function Hero() {
   return (
     <section className='max-container padding-container flex flex-col gap-20 py-10 pb-32 md:gap-28 lg:py-20 xl:flex-row'>
-      <div className='hero-map'/>
+      <div className='absolute right-0 top-0 h-screen w-screen  bg-cover bg-center md:right-[-240px] xl:top-[-70px];'>
+        <img src={Background} alt="pattern"/>
+
+      </div>
 
 
         <div className='relative z-20 flex flex-1 flex-col xl:w-1/2'>
