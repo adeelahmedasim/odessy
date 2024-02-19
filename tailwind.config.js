@@ -29,8 +29,6 @@ export default {
         },
       },
       backgroundImage: {
-        'bg-img-1': "url('./src/assets/img-1.png')",
-        'bg-img-2': "url('./src/assets/img-2.png')",
         'feature-bg': "url('./src/assets/feature-bg.png')",
         'pattern': "url('./src/assets/pattern.png')",
         'pattern-2': "url('./src/assets/pattern-bg.png')",

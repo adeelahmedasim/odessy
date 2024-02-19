@@ -2,10 +2,12 @@ import React from 'react'
 import Map from '../assets/folded-map.svg'
 import Quote from "../assets/quote.svg"
 import { PEOPLE_URL } from '../../constants'
+import  Camp1 from '../assets/img-1.png'
+import  Camp2 from '../assets/img-2.png'
 
 const CampSite = ({backgroundImage, title, subtitle, peopleJoined}) => {
   return (
-    <div className={`h-full w-full min-w-[1100px] ${backgroundImage} bg-cover bg-no-repeat lg:rounded-r-5xl 2xl:rounded-5xl`}>
+    <div className={`h-full w-full min-w-[1100px] bg-cover bg-no-repeat rounded-5xl lg:rounded-r-5xl 2xl:rounded-5xl`} style={{ backgroundImage: `url(${backgroundImage})` }}>
     <div className='flex h-full flex-col items-start justify-between p-8 lg-px-20 lg:py-10'>
         <div className='flexCenter gap-4'>
            <div className='rounded-full bg-green-50 p-4'>
@@ -39,13 +41,13 @@ export default function Camp() {
       <div className='hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto lg:h-[400px] xl:h-[640px]'>
 
         <CampSite
-        backgroundImage="bg-bg-img-1"
+        backgroundImage={Camp1}
         title="Putuk Truno Camp"
         subtitle="Prigen, Pasuruan"
         peopleJoined="50+ Joined"
         />
         <CampSite
-        backgroundImage="bg-bg-img-2"
+        backgroundImage={Camp2}
         title="Mountain View Camp"
         subtitle="Somewhere in the Wilderness"
         peopleJoined="50+ Joined"
