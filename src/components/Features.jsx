@@ -2,10 +2,12 @@ import React from 'react'
 import Phone from '../assets/phone.png'
 import Camp from '../assets/camp.svg'
 import { FEATURES } from '../../constants'
+import FeaturesBg from  '../assets/feature-bg.png'
 
 export default function Features() {
   return (
-    <section className='flexCenter overflow-hidden bg-feature-bg bg-center bg-no-repeat py-24'>
+    <section className='flexCenter overflow-hidden bg-center bg-no-repeat py-24' style={{ backgroundImage: `url(${FeaturesBg})` }}>
+      
       <div className='max-container padding-container relative w-full flex flex-col lg:flex-row justify-end'>
         <div className=' flex flex-1 lg:min-h-[900px]'>
           <img src={Phone} alt="phone" width={440} height={1000} className='feature-phone' />

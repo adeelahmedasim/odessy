@@ -28,11 +28,8 @@ export default {
           50: '#FEC601',
         },
       },
-      backgroundImage: {
-        'feature-bg': "url('./src/assets/feature-bg.png')",
-        'pattern': "url('./src/assets/pattern.png')",
-        'pattern-2': "url('./src/assets/pattern-bg.png')",
-      },
+      
+    
       screens: {
         'xs': '400px',
         '3xl': '1680px',
